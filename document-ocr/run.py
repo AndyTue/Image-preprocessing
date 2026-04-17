@@ -21,7 +21,7 @@ from app.ocr import engine as ocr_engine
 from app.pipeline import process_file
 
 # ─── edita aquí ──────────────────────────────────────────────────────────────
-INPUT = "examples/Indian IDs.pdf"      
+INPUT = "examples/visa.pdf"      
 OUTPUT = "output"
 RUN_OCR = True
 VISUALIZE = True
