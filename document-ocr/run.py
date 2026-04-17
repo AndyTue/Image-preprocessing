@@ -21,7 +21,7 @@ from app.ocr import engine as ocr_engine
 from app.pipeline import process_file
 
 # ─── edita aquí ──────────────────────────────────────────────────────────────
-INPUT = "examples/PANcard.jpeg"      
+INPUT = "examples/Indian IDs.pdf"      
 OUTPUT = "output"
 RUN_OCR = True
 VISUALIZE = True
@@ -47,10 +47,9 @@ def run_one(path: str, cfg, reader, output_dir: str, visualize: bool) -> None:
         print(f"  [{tag}] p{p.page_number}  score={p.quality.score:.3f}{ocr_info}  → {img_path.name}")
 
         if visualize and p.ocr is not None:
-            from app.visualization import cv2_overlay, mpl_overlay
+            from app.visualization import mpl_overlay
             stem = Path(p.source).stem
             out = Path(output_dir)
-            cv2_overlay.render(p.image, p.ocr, out / f"{stem}_p{p.page_number}_overlay.jpg")
             mpl_overlay.render(p.image, p.ocr, out / f"{stem}_p{p.page_number}_overlay.png",
                                cfg.visualization.font_path)
 

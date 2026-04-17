@@ -67,12 +67,10 @@ def _persist(result: BatchResult, output_dir: str, cfg, *, visualize: bool) -> N
 
 
 def _render_overlays(page, output_dir: str, cfg) -> None:
-    from app.visualization import cv2_overlay, mpl_overlay
+    from app.visualization import mpl_overlay
     stem = Path(page.source).stem
-    cv2_path = Path(output_dir) / f"{stem}_p{page.page_number}_overlay.jpg"
-    mpl_path = Path(output_dir) / f"{stem}_p{page.page_number}_overlay.png"
-    cv2_overlay.render(page.image, page.ocr, cv2_path)
-    mpl_overlay.render(page.image, page.ocr, mpl_path, cfg.visualization.font_path)
+    overlay_path = Path(output_dir) / f"{stem}_p{page.page_number}_overlay.png"
+    mpl_overlay.render(page.image, page.ocr, overlay_path, cfg.visualization.font_path)
 
 
 def _print_summary(result: BatchResult, elapsed: float, output_dir: str) -> None:
