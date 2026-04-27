@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "metadata-analyzer"
+version = "0.1.0"
+description = "Standalone metadata forensics for document fraud detection — integrates later into document-ocr"
+requires-python = ">=3.10"
+dependencies = [
+    "PyMuPDF>=1.24",
+    "Pillow>=10.0",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=7.0"]
+
+[project.scripts]
+metadata-analyze = "analyzer.extractor:_main"
+
+[tool.setuptools.packages.find]
+include = ["analyzer*"]

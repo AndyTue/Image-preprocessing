@@ -10,7 +10,6 @@ from __future__ import annotations
 import sys
 from pathlib import Path
 
-# -- Evita que stdout se rompa con texto devanagari en Windows ----------------
 if sys.stdout.encoding.lower() != "utf-8":
     sys.stdout.reconfigure(encoding="utf-8")  # type: ignore
     sys.stderr.reconfigure(encoding="utf-8")  # type: ignore
@@ -20,12 +19,12 @@ from app.io.writer import save_image, save_ocr_json
 from app.ocr import engine as ocr_engine
 from app.pipeline import process_file
 
-# ─── edita aquí ──────────────────────────────────────────────────────────────
-INPUT = "examples/visa.pdf"      
+# ─────────────────────────────────────────────────────────────────
+INPUT = "../examples/visaliz.pdf"  # str or list[str] 
 OUTPUT = "output"
 RUN_OCR = True
 VISUALIZE = True
-# ─────────────────────────────────────────────────────────────────────────────
+# ──────────────────────────────────────────────────────────────────
 
 
 def run_one(path: str, cfg, reader, output_dir: str, visualize: bool) -> None:

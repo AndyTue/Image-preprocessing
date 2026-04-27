@@ -1,0 +1,23 @@
+{
+    "python.defaultInterpreterPath": "${workspaceFolder}/.env/Scripts/python.exe",
+    "python.analysis.extraPaths": [
+        "${workspaceFolder}/image-tampering",
+        "${workspaceFolder}/metadata",
+        "${workspaceFolder}/document-ocr"
+    ],
+    "python.analysis.exclude": [
+        "${workspaceFolder}/image-tampering/detector/models",
+        "${workspaceFolder}/**/__pycache__",
+        "${workspaceFolder}/**/weights",
+        "${workspaceFolder}/.env"
+    ],
+    "python.analysis.typeCheckingMode": "basic",
+    "python.analysis.diagnosticSeverityOverrides": {
+        "reportMissingImports": "warning",
+        "reportMissingTypeStubs": "none"
+    },
+    "files.exclude": {
+        "**/__pycache__": true,
+        "**/*.egg-info": true
+    }
+}
