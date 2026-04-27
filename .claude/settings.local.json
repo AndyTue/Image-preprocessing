@@ -2,7 +2,8 @@
   "permissions": {
     "allow": [
       "Bash(python run.py)",
-      "Bash(python -c ' *)"
+      "Bash(python -c ' *)",
+      "Bash(xargs grep *)"
     ]
   }
 }
