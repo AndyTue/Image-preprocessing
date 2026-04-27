@@ -1,2 +1,0 @@
-[console_scripts]
-docpipe = app.cli:main

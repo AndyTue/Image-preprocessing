@@ -3,7 +3,18 @@
     "allow": [
       "Bash(python run.py)",
       "Bash(python -c ' *)",
-      "Bash(xargs grep *)"
+      "Bash(xargs grep *)",
+      "Bash(\"/c/Users/andy_/Desktop/Services eKYC/.env/Scripts/python\" -c \"import fitz; import PIL; print\\('fitz:', fitz.__doc__[:50] if fitz.__doc__ else 'ok'\\); print\\('PIL:', PIL.__version__\\)\")",
+      "Bash('/c/Users/andy_/Desktop/Services eKYC/.env/Scripts/python' -c ' *)",
+      "Bash(\"/c/Users/andy_/Desktop/Services eKYC/.env/Scripts/python\" -m pip install \"fastapi[standard]\")",
+      "Bash(\"/c/Users/andy_/Desktop/Services eKYC/.env/Scripts/python\" -m uvicorn main:app --host 127.0.0.1 --port 8765 --no-access-log)",
+      "Bash(grep -q \"Pipeline ready\\\\|Application startup complete\\\\|Error\\\\|error\" \"C:\\\\\\\\Users\\\\\\\\andy_\\\\\\\\AppData\\\\\\\\Local\\\\\\\\Temp\\\\\\\\claude\\\\\\\\c--Users-andy--Desktop-Services-eKYC\\\\\\\\78e219f9-6e34-4cd7-82f0-45fe6b16294b\\\\\\\\tasks\\\\\\\\brh2va7fc.output\")",
+      "Bash(cat \"C:\\\\\\\\Users\\\\\\\\andy_\\\\\\\\AppData\\\\\\\\Local\\\\\\\\Temp\\\\\\\\claude\\\\\\\\c--Users-andy--Desktop-Services-eKYC\\\\\\\\78e219f9-6e34-4cd7-82f0-45fe6b16294b\\\\\\\\tasks\\\\\\\\brh2va7fc.output\")",
+      "Bash(cat \"C:\\\\\\\\Users\\\\\\\\andy_\\\\\\\\AppData\\\\\\\\Local\\\\\\\\Temp\\\\\\\\claude\\\\\\\\c--Users-andy--Desktop-Services-eKYC\\\\\\\\78e219f9-6e34-4cd7-82f0-45fe6b16294b\\\\\\\\tasks\\\\\\\\b5fd6366x.output\")",
+      "Bash(time curl *)",
+      "Read(//tmp/**)",
+      "Bash(git -C api-doc-fraud ls-tree -r origin/main --name-only)",
+      "Bash(git -C api-doc-fraud log origin/main --oneline)"
     ]
   }
 }
