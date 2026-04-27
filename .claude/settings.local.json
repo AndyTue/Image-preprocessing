@@ -14,7 +14,10 @@
       "Bash(time curl *)",
       "Read(//tmp/**)",
       "Bash(git -C api-doc-fraud ls-tree -r origin/main --name-only)",
-      "Bash(git -C api-doc-fraud log origin/main --oneline)"
+      "Bash(git -C api-doc-fraud log origin/main --oneline)",
+      "Bash(git -C '/c/Users/andy_/Desktop/Services eKYC/api-doc-fraud' status --short)",
+      "Bash(git -C '/c/Users/andy_/Desktop/Services eKYC/api-doc-fraud' commit -m 'Andy: extended pipeline \\(preprocessor, OCR, metadata, tampering\\)')",
+      "Bash(git -C '/c/Users/andy_/Desktop/Services eKYC/api-doc-fraud' push -u origin Andy)"
     ]
   }
 }
