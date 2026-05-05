@@ -17,7 +17,18 @@
       "Bash(git -C api-doc-fraud log origin/main --oneline)",
       "Bash(git -C '/c/Users/andy_/Desktop/Services eKYC/api-doc-fraud' status --short)",
       "Bash(git -C '/c/Users/andy_/Desktop/Services eKYC/api-doc-fraud' commit -m 'Andy: extended pipeline \\(preprocessor, OCR, metadata, tampering\\)')",
-      "Bash(git -C '/c/Users/andy_/Desktop/Services eKYC/api-doc-fraud' push -u origin Andy)"
+      "Bash(git -C '/c/Users/andy_/Desktop/Services eKYC/api-doc-fraud' push -u origin Andy)",
+      "Bash(python validate_scan.py)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:docsaid.org)",
+      "WebSearch",
+      "WebFetch(domain:pypi.org)",
+      "Bash(pip download *)",
+      "Bash(python -c \"import onnxruntime; print\\('onnxruntime version:', onnxruntime.__version__\\)\")",
+      "Bash(pip install *)",
+      "Bash(python -c \"import onnxruntime; print\\('onnxruntime version:', onnxruntime.__version__\\); print\\('providers:', onnxruntime.get_available_providers\\(\\)\\)\")",
+      "Bash(python -m pip install onnxruntime)",
+      "Bash(python -c \"import onnxruntime; print\\('onnxruntime', onnxruntime.__version__\\); print\\('providers:', onnxruntime.get_available_providers\\(\\)\\)\")"
     ]
   }
 }
