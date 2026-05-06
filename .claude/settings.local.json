@@ -28,7 +28,10 @@
       "Bash(pip install *)",
       "Bash(python -c \"import onnxruntime; print\\('onnxruntime version:', onnxruntime.__version__\\); print\\('providers:', onnxruntime.get_available_providers\\(\\)\\)\")",
       "Bash(python -m pip install onnxruntime)",
-      "Bash(python -c \"import onnxruntime; print\\('onnxruntime', onnxruntime.__version__\\); print\\('providers:', onnxruntime.get_available_providers\\(\\)\\)\")"
+      "Bash(python -c \"import onnxruntime; print\\('onnxruntime', onnxruntime.__version__\\); print\\('providers:', onnxruntime.get_available_providers\\(\\)\\)\")",
+      "Bash(\"c:/Users/andy_/Desktop/Services eKYC/api-doc-fraud/.venv/Scripts/python.exe\" -m pip list --format=freeze)",
+      "PowerShell(& \"C:\\\\Users\\\\andy_\\\\Desktop\\\\Services eKYC\\\\api-doc-fraud\\\\.venv\\\\Scripts\\\\python.exe\" -m pip install onnxruntime qwen-vl-utils)",
+      "Bash(\"c:/Users/andy_/Desktop/Services eKYC/api-doc-fraud/.venv/Scripts/python.exe\" -c \"import onnxruntime; print\\('onnxruntime', onnxruntime.__version__\\); import qwen_vl_utils; print\\('qwen_vl_utils OK'\\)\")"
     ]
   }
 }
