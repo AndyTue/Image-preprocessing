@@ -1,8 +1,10 @@
 /.env
 
+PAN/
 examples/
 .vscode/
 .claude/
 validate_scan_output/
 files/
-api-doc-fraud/validate_scan_output/
+api-doc-fraud/service/tampering/test_output/
+api-doc-fraud/service/tampering/output/

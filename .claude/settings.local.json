@@ -31,7 +31,26 @@
       "Bash(python -c \"import onnxruntime; print\\('onnxruntime', onnxruntime.__version__\\); print\\('providers:', onnxruntime.get_available_providers\\(\\)\\)\")",
       "Bash(\"c:/Users/andy_/Desktop/Services eKYC/api-doc-fraud/.venv/Scripts/python.exe\" -m pip list --format=freeze)",
       "PowerShell(& \"C:\\\\Users\\\\andy_\\\\Desktop\\\\Services eKYC\\\\api-doc-fraud\\\\.venv\\\\Scripts\\\\python.exe\" -m pip install onnxruntime qwen-vl-utils)",
-      "Bash(\"c:/Users/andy_/Desktop/Services eKYC/api-doc-fraud/.venv/Scripts/python.exe\" -c \"import onnxruntime; print\\('onnxruntime', onnxruntime.__version__\\); import qwen_vl_utils; print\\('qwen_vl_utils OK'\\)\")"
+      "Bash(\"c:/Users/andy_/Desktop/Services eKYC/api-doc-fraud/.venv/Scripts/python.exe\" -c \"import onnxruntime; print\\('onnxruntime', onnxruntime.__version__\\); import qwen_vl_utils; print\\('qwen_vl_utils OK'\\)\")",
+      "Bash(.env/Scripts/python.exe -m gdown --version)",
+      "Bash(api-doc-fraud/.venv/Scripts/python.exe -m gdown --version)",
+      "Bash(api-doc-fraud/.venv/Scripts/python.exe -m pip install gdown)",
+      "Bash(api-doc-fraud/.venv/Scripts/python.exe -m gdown --folder \"https://drive.google.com/drive/folders/1qx76UFvDpgCxaPLBCmsA2WY-SSzeJrd4\" -O api-doc-fraud/service/tampering/weights/aide/)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Bash(stat -c '%s' 'C:/Users/andy_/AppData/Local/Temp/claude/c--Users-andy--Desktop-Services-eKYC/baf060a3-2174-4697-9592-c8fdcb5f517b/tasks/bu3rvmycu.output' 2>&1)",
+      "Read(//c/Users/andy_/Desktop/Services eKYC/**)",
+      "Bash(curl -L -o api-doc-fraud/service/tampering/weights/aide/resnet50.pth https://download.pytorch.org/models/resnet50-0676ba61.pth)",
+      "Bash(git -C \"c:\\\\Users\\\\andy_\\\\Desktop\\\\Services eKYC\\\\api-doc-fraud\" log --oneline -10)",
+      "Bash(git -C \"c:\\\\Users\\\\andy_\\\\Desktop\\\\Services eKYC\\\\api-doc-fraud\" status)",
+      "Bash(git -C \"c:\\\\Users\\\\andy_\\\\Desktop\\\\Services eKYC\\\\api-doc-fraud\" log origin/Andy..Andy --oneline)",
+      "Bash(git -C \"c:\\\\Users\\\\andy_\\\\Desktop\\\\Services eKYC\\\\api-doc-fraud\" log origin/main..Andy --oneline)",
+      "Bash(git -C \"c:\\\\Users\\\\andy_\\\\Desktop\\\\Services eKYC\\\\api-doc-fraud\" show --stat 4f829af)",
+      "Bash(git -C \"c:\\\\Users\\\\andy_\\\\Desktop\\\\Services eKYC\\\\api-doc-fraud\" show 4f829af:.gitignore)",
+      "Bash(git -C \"c:\\\\Users\\\\andy_\\\\Desktop\\\\Services eKYC\\\\api-doc-fraud\" reset --soft HEAD~1)",
+      "Bash(git -C \"c:\\\\Users\\\\andy_\\\\Desktop\\\\Services eKYC\\\\api-doc-fraud\" rm --cached service/tampering/weights/trufor/trufor.pth.tar)",
+      "Bash(git -C \"c:\\\\Users\\\\andy_\\\\Desktop\\\\Services eKYC\\\\api-doc-fraud\" add .gitignore)",
+      "Bash(git -C \"c:\\\\Users\\\\andy_\\\\Desktop\\\\Services eKYC\\\\api-doc-fraud\" commit -m \"tampering improve\")",
+      "Bash(git -C \"c:\\\\Users\\\\andy_\\\\Desktop\\\\Services eKYC\\\\api-doc-fraud\" push origin Andy:Andy)"
     ]
   }
 }
