@@ -50,7 +50,13 @@
       "Bash(git -C \"c:\\\\Users\\\\andy_\\\\Desktop\\\\Services eKYC\\\\api-doc-fraud\" rm --cached service/tampering/weights/trufor/trufor.pth.tar)",
       "Bash(git -C \"c:\\\\Users\\\\andy_\\\\Desktop\\\\Services eKYC\\\\api-doc-fraud\" add .gitignore)",
       "Bash(git -C \"c:\\\\Users\\\\andy_\\\\Desktop\\\\Services eKYC\\\\api-doc-fraud\" commit -m \"tampering improve\")",
-      "Bash(git -C \"c:\\\\Users\\\\andy_\\\\Desktop\\\\Services eKYC\\\\api-doc-fraud\" push origin Andy:Andy)"
+      "Bash(git -C \"c:\\\\Users\\\\andy_\\\\Desktop\\\\Services eKYC\\\\api-doc-fraud\" push origin Andy:Andy)",
+      "PowerShell(& \"c:\\\\Users\\\\andy_\\\\Desktop\\\\Services eKYC\\\\api-doc-fraud\\\\.venv\\\\Scripts\\\\python.exe\" -c \"from service.ocr.backends.ollama_vision import OllamaVisionBackend; b = OllamaVisionBackend\\('http://localhost:11434', 'qwen2.5vl:3b'\\); print\\('OK url=', b._url, 'model=', b._model\\)\")",
+      "PowerShell(try { $r = Invoke-RestMethod -Uri \"http://localhost:11434/api/tags\" -ErrorAction Stop; $r.models | Select-Object name, size } catch { Write-Output \"ERROR: $\\($_.Exception.Message\\)\" })",
+      "PowerShell($r = Invoke-RestMethod -Uri \"http://localhost:11434/api/tags\"; $r.models | ForEach-Object { $_.name })",
+      "PowerShell($body = @{ model = \"qwen2.5vl:3b\"; prompt = \"Say OK\"; stream = $false; options = @{ num_predict = 5 } } | ConvertTo-Json; $resp = Invoke-RestMethod -Uri \"http://localhost:11434/api/generate\" -Method Post -Body $body -ContentType \"application/json\" -TimeoutSec 30; Write-Output \\(\"OK response: \" + $resp.response\\))",
+      "Bash(./.venv/Scripts/python.exe -c ' *)",
+      "PowerShell(try { $r = Invoke-RestMethod \"http://localhost:11434/api/ps\" -TimeoutSec 5; $r.models | Select-Object name, size_vram, size, expires_at | Format-List } catch { Write-Output \"no /api/ps response: $\\($_.Exception.Message\\)\" })"
     ]
   }
 }
