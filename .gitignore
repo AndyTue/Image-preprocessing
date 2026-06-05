@@ -8,3 +8,8 @@ validate_scan_output/
 files/
 api-doc-fraud/service/tampering/test_output/
 api-doc-fraud/service/tampering/output/
+liveness/liveness/weights/
+liveness/liveness/output/
+liveness/lab/datasets/
+liveness/lab/output/
+liveness/
